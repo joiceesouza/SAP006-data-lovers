@@ -3,7 +3,7 @@
 
 //import { dataghibli } from './data.js';
 
-import { ordemAlfabetica, getPeople, buscarName } from './data.js';
+import { getPeople, buscarName, ordemAlfabetica, ordemPersonagem } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
@@ -90,8 +90,16 @@ buscarNomes.addEventListener("keyup", filtroPesquisa);
 
 const ordenar = document.querySelector(".order");
 function ordemFilme(event) {
-  const order = ordemAlfabetica(data.films, event.target.value)
+  const filtrarMenu = document.getElementById("filterMenu")
+  if (filtrarMenu.value == "Filmes"){
+    const order = ordemAlfabetica(data.films, event.target.value)
   showFilme(order);
+  }
+  else if (filtrarMenu.value == "Personagem"){
+    const order = ordemPersonagem(people, event.target.value)
+  showPeople(order);
+  }
+ 
 }
 ordenar.addEventListener("change", ordemFilme);
 
