@@ -91,11 +91,11 @@ buscarNomes.addEventListener("keyup", filtroPesquisa);
 const ordenar = document.querySelector(".order");
 function ordemFilme(event) {
   const filtrarMenu = document.getElementById("filterMenu")
-  if (filtrarMenu.value == "Filmes"){
+  if (filtrarMenu.value === "Filmes"){
     const order = ordemAlfabetica(data.films, event.target.value)
   showFilme(order);
   }
-  else if (filtrarMenu.value == "Personagem"){
+  else if (filtrarMenu.value === "Personagem"){
     const order = ordemPersonagem(people, event.target.value)
   showPeople(order);
   }
@@ -108,11 +108,11 @@ ordenar.addEventListener("change", ordemFilme);
 const filtrarMenu = document.getElementById("filterMenu")
 filtrarMenu.addEventListener("change", function (event) {
   let filmeMenu = event.target.value
-  if (filmeMenu == "Filmes") {
+  if (filmeMenu === "Filmes") {
     listaPersonagem.innerHTML = ""
     showFilme(films)
   }
-  else if (filmeMenu == "Personagem") {
+  else if (filmeMenu === "Personagem") {
     listaImpressa.innerHTML = ""
     showPeople(people)
   }
@@ -131,11 +131,11 @@ filterFilm.addEventListener("change", function (event) {
   listaImpressa.innerHTML = ""
   let director = event.target.value
 
-  if (director == "todos") {
+  if (director === "todos") {
     showFilme(films)
   }
   else {
-    let filteres = films.filter(film => film.director == director);
+    let filteres = films.filter(film => film.director === director);
     showFilme(filteres)
   }
 })
@@ -149,7 +149,7 @@ femeleMale.addEventListener("change", function (event) {
   for (let filme of films) {
     let peopleS = filme.people
     let gender = event.target.value
-    let filterGenero = peopleS.filter(peopleS => peopleS.gender == gender);
+    let filterGenero = peopleS.filter(peopleS => peopleS.gender === gender);
     filtroPersonagem = filtroPersonagem.concat(filterGenero);
   }
   showPeople(filtroPersonagem)
@@ -175,6 +175,8 @@ printCuriosidade.innerHTML =
   <br>
   <p class="media"> A média de personagem por filme é: ${mediaPersonagens}</p>
   <br>
-  <a  href ="https://pt.quizur.com/tag/b4I-studio-ghibli"  target ="_self">Quiz e Testes de Personalidade sobre Studio Ghibli. Clique aqui!</a>
+  <a href ="https://pt.quizur.com/tag/b4I-studio-ghibli"  target ="_self"> Faça Quiz ou Testes de Personalidade sobre Studio Ghibli</a>
+  <br>
+  <a href ="https://open.spotify.com/playlist/603D3vOd4rWEl3ym4DLWK1?si=13453fabba424c16" target ="_self"> Ouça Studio Ghibli Therapy Session</a>
   </div>`
 
