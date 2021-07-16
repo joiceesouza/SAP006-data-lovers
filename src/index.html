@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="icon.png" type="icon" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar-container">
+      <div class="nav-item nav-grow"></div>
+      <img src="icon.png" class="logo" alt="Logo">
+      <h1>Studio Ghibli - 株式会社スタジオジブリ</h1>
+
+      <form class="filtermenu"></form>
+
+      <input id="search" type="Pesquisa" placeholder="Pesquisar" />
+      <img src=search.png class="lupa" alt="Buscar..." />
+
+        <section class="Menu"></section>
+        <select class="Filmes" id="filterMenu">
+          <option value="none" selected>Buscar por</option>
+          <option value="Filmes">Filmes</option>
+          <option value="Personagem">Personagem</option>
+        </select>
+
+        <select class="genero" id="genero_id">
+          <option value="none" selected="Gênero">Buscar por Gênero</option>
+          <option value="Female">Feminino</option>
+          <option value="Male">Masculino</option>
+        </select>
+
+        <select class="order" id="order">
+          <option value="ordenar" selected="ordenar">Ordenar por</option>
+          <option value="crescente">A a Z</option>
+          <option value="decrescente">Z a A</option>
+        </select>
+
+        <select class="Filmes" id="select_id">
+          <option value="todos" selected="Filmes" id="Filmes">Buscar por Diretor</option>
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+        </select>
+      </form>
+    </nav>
+  </header>
+
+  <section class="listacuriosidades" id="curiosidades_id"></section>
+  <section class="listaImpressa" id="listaImpressa"></section>
+  <section class="listaPersonagem" id="listaPersonagem"></section>
+
+  <footer> Desenvolvido por
+    <a href="https://github.com/EricaSerpa">Érica Serpa</a> e
+    <a href="https://github.com/joiceesouza">Joice Souza</a>
+  </footer>
+
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
