@@ -2,10 +2,11 @@
 //SEARCH//
 
 export const buscarName = (data, condition) => {
-  const resultadoBusca = data.filter(n => n.title.toLowerCase().includes(condition.toLowerCase()));
+  const resultadoBusca = data.filter((name) => name.title.toLowerCase().includes(condition.toLowerCase()));
   return resultadoBusca;
 };
 
+//O método includes() determina se um array contém um determinado elemento, retornando  true ou false apropriadamente. 
 
 //ORDENAR//
 export const ordemAlfabetica = (data, order) => {
@@ -13,6 +14,14 @@ export const ordemAlfabetica = (data, order) => {
     return data.sort((a, z) => a.title > z.title ? 1 : -1)
   } else if (order === "decrescente") {
     return data.sort((a, z) => a.title > z.title ? -1 : 1)
+  } return data
+};
+
+export const ordemPersonagem = (data, order) => {
+  if (order === "crescente") {
+    return data.sort((a, z) => a.name > z.name ? 1 : -1)
+  } else if (order === "decrescente") {
+    return data.sort((a, z) => a.name > z.name ? -1 : 1)
   } return data
 };
 
