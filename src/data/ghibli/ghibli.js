@@ -737,16 +737,7 @@ export default {
           "hair_color": "Black",
           "specie": "Human"
         },
-        {
-          "id": "a63c25f4-41a4-4f78-933f-3c14e2903a8f",
-          "name": "Capo",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/9/98/Aiuto_Gang_boss.jpg",
-          "gender": "Male",
-          "age": "Adult",
-          "eye_color": "Black",
-          "hair_color": "Bald",
-          "specie": "Human"
-        },
+       
         {
           "id": "5fd7416f-d928-4ebc-a4fb-d9bbdf99b06a",
           "name": "Ferrari",
