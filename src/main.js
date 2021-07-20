@@ -3,7 +3,7 @@
 
 //import { dataghibli } from './data.js';
 
-import { getPeople, buscarName, ordemAlfabetica, ordemPersonagem } from './data.js';
+import { getPeople, buscarName, ordemAlfabetica, ordemPersonagem, calcAgregado } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
@@ -48,7 +48,7 @@ showFilme(films)
 
 const listaPersonagem = document.getElementById("listaPersonagem")
 const showPeople = (peopleList) => {
- let cardString = ""
+  let cardString = ""
   peopleList.forEach(people => {
     cardString +=
       `
@@ -91,15 +91,15 @@ buscarNomes.addEventListener("keyup", filtroPesquisa);
 const ordenar = document.querySelector(".order");
 function ordemFilme(event) {
   const filtrarMenu = document.getElementById("filterMenu")
-  if (filtrarMenu.value === "Filmes"){
+  if (filtrarMenu.value === "Filmes") {
     const order = ordemAlfabetica(data.films, event.target.value)
-  showFilme(order);
+    showFilme(order);
   }
-  else if (filtrarMenu.value === "Personagem"){
+  else if (filtrarMenu.value === "Personagem") {
     const order = ordemPersonagem(people, event.target.value)
-  showPeople(order);
+    showPeople(order);
   }
- 
+
 }
 ordenar.addEventListener("change", ordemFilme);
 
@@ -158,24 +158,27 @@ femeleMale.addEventListener("change", function (event) {
 
 //CALCULO AGREGADO//
 
-let printCuriosidade = document.getElementById("curiosidades_id")
-let personagens = []
-for (let i = 0; i < films.length; i++) {
-  personagens.push(films[i].people.length)
-}
+window.addEventListener("load", function (event) {
+  let printCuriosidade = document.getElementById("curiosidades_id")
+  let personagens = []
+  for (let i = 0; i < films.length; i++) {
+    personagens.push(films[i].people.length)
+  }
+  const curiosidades = calcAgregado(personagens, event.target.value)
+  const mediaPersonagens = curiosidades.media
+  const totalPersonagens = curiosidades.total
 
-const mediaPersonagens = personagens.reduce((a, b) => (a + b)) / personagens.length
-const totalPersonagens = personagens.reduce((a, b) => (a + b))
-
-printCuriosidade.innerHTML =
-  `<div class="class_id">
+  printCuriosidade.innerHTML =
+    `<div class="class_id">
   <h4>Curiosidades</h4>
   <br>
   <p class="soma">A soma de todos os personagens é: ${totalPersonagens}</p>
   <br>
   <p class="media"> A média de personagem por filme é: ${mediaPersonagens}</p>
   <br>
-  <a href ="https://pt.quizur.com/tag/b4I-studio-ghibli"  target ="_self"> Faça Quiz ou Testes de Personalidade sobre Studio Ghibli</a>
+  <a href ="https://pt.quizur.com/tag/b4I-studio-ghibli"  target="_blank"> Faça Quiz ou Testes de Personalidade sobre Studio Ghibli</a>
   <br>
-  <a href ="https://open.spotify.com/playlist/603D3vOd4rWEl3ym4DLWK1?si=13453fabba424c16" target ="_self"> Ouça Studio Ghibli Therapy Session</a>
+  <a href ="https://open.spotify.com/playlist/603D3vOd4rWEl3ym4DLWK1?si=13453fabba424c16" target="_blank"> Ouça Studio Ghibli Therapy Session</a>
   </div>`
+});
+

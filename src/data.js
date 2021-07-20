@@ -30,11 +30,22 @@ export const ordemPersonagem = (data, order) => {
 export const getPeople = films => {
   let people = []
   for (let film of films) {
-    const chars = film.people.map (function (char){
+    const chars = film.people.map(function (char) {
       char.movie = film.title
-     return char
+      return char
     })
-    people = people.concat(film.people)  //concat cria um novo array unindo todos os elementos que foram passados como parâmetro, na ordem dada, para cada argumento e seus elementos (se o elemento passado for um array). //
+    people = people.concat(chars)  //concat cria um novo array unindo todos os elementos que foram passados como parâmetro, na ordem dada, para cada argumento e seus elementos (se o elemento passado for um array). //
   }
   return people
 }
+
+//CALCULO AGREGADO//
+
+export const calcAgregado = (personagens) => {
+  const mediaPersonagens = personagens.reduce((a, b) => (a + b)) / personagens.length
+  const totalPersonagens = personagens.reduce((a, b) => (a + b))
+  return {
+    "media": mediaPersonagens, "total": totalPersonagens
+  }
+}
+
