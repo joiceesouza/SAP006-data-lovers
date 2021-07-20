@@ -91,15 +91,15 @@ buscarNomes.addEventListener("keyup", filtroPesquisa);
 const ordenar = document.querySelector(".order");
 function ordemFilme(event) {
   const filtrarMenu = document.getElementById("filterMenu")
-    if (filtrarMenu.value === "Filmes"){
+  
+  if (filtrarMenu.value === "Filmes"){
     const order = ordemAlfabetica(data.films, event.target.value)
   showFilme(order);
   }
-    else if (filtrarMenu.value === "Personagem"){
+  else if (filtrarMenu.value === "Personagem"){
     const order = ordemPersonagem(people, event.target.value)
   showPeople(order);
-    }
- 
+  } 
 }
 ordenar.addEventListener("change", ordemFilme);
 
@@ -148,8 +148,8 @@ femeleMale.addEventListener("change", function (event) {
   showPeople(filtroPersonagem)
 })
 
-//CALCULO AGREGADO//
 
+//CALCULO AGREGADO//
 
   let printCuriosidade = document.getElementById("curiosidades_id")
   window.addEventListener("load", function(event) {

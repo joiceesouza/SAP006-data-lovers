@@ -37,7 +37,7 @@ h1{
 }
 
 .logo{
-    margin-left: 250px;
+    margin-left: 180px;
 }
 
 a{
@@ -61,13 +61,13 @@ select {
     height: 25px;
     background:  #dba3b0;
 }
+
 select:hover{
     text-shadow: 
     0px 0px 10px #9B59B6,
     0px 0px 20px #9B59B6,
     0px 0px 30px #9B59B6;
 }
-
 
 input{
     font-size: 16px ;
@@ -79,6 +79,7 @@ input{
     outline: none;
     border: none;
     padding: fixed;
+}
 
 .filtermenu{
     display: flex;
@@ -185,6 +186,7 @@ input{
 
 footer{
     color: black;
+    font-weight:bolder;
     text-align: center;
     margin-top: 25px;
     margin-block-end: 25px;
@@ -451,5 +453,177 @@ footer{
         width: 70vw;      
         height: 30vh;
         margin-left: 14%;
+    }
+}
+
+
+
+
+/*======================RESPONSIVIDADE===========================*/
+
+@media (max-width:1045px){
+
+    
+    h1{
+        margin-left: auto;
+        font-size: 50px;
+    }
+    
+    .logo{
+        margin-left: auto;
+    }
+
+    .listaImpressa{
+        margin-left: 5%;
+    }
+    .listaPersonagem{
+        margin-left: 5%;
+    }
+
+    .cardGhibli{
+        width: 18vw;
+        height: 30vh;
+    }
+
+    .front-card img, .back-card{
+        width: 18vw;
+        height: 30vh;
+    }
+    
+    .cardPersonagem{
+        width: 18vw;
+        height: 30vh;
+        
+    }
+    .front-personagens img, .back-personagens{
+        width: 18vw;
+        height: 30vh;
+    }
+    
+    .listacuriosidades{
+        width: 50vw;      
+        height: 25vh;
+        margin-left: 24%;
+    }
+   
+  }
+
+/*===============TABLETS===========================*/
+@media (min-width:481px) and (max-width:768px){
+
+    .navbar-container{
+        padding: 15px;
+    }
+    h1{
+        margin-left: auto;
+        font-size: 23px;
+    }
+    .logo{
+        margin-left: auto;
+    }
+
+    input, button{
+        margin-left:auto;
+    }
+
+    .listaImpressa {
+        margin-left: 5%;
+    }
+    
+    .listaPersonagem{
+        margin-left: 5%;
+    }
+    .cardGhibli{
+        width: 25vw;    /*ajuste dos cards*/
+        height: 30vh;
+    }
+    .front-card img, .back-card{
+        width: 25vw;    
+        height: 30vh;
+    }
+    
+    .card-titulo{
+        font-size: 100%;
+        margin-top: 10px;
+    }
+    
+    .cardPersonagem{
+        width: 25vw;    
+        height: 30vh;
+         
+    }
+    .front-personagens img, .back-personagens{
+        width: 25vw;    
+        height: 30vh;
+    }
+    .listacuriosidades{
+        width: 55vw;      
+        height: 25vh;
+        margin-left: 24%;
+    }
+}
+
+
+/*================CELULARES============*/
+@media screen and (max-width: 425px){
+
+    body {
+        background-image: none;
+        background: #dba3b0/* rgb(242, 204, 211)*/;
+    }
+
+    .navbar-container{
+        padding: 5px;
+    }
+    h1{
+        margin-left: auto;
+        font-size: 20px;
+    }
+    
+    .logo{
+        margin-left: auto;
+    }
+
+    input, button{
+        margin-left: 14%;
+    }
+    .listaImpressa {
+        margin-left: 13%;
+    }
+    
+    .listaPersonagem{
+        margin-left: 13%;
+    }
+    .card-descrição{
+        font-size: 68%;
+        margin: 5%;
+    }
+
+    .cardGhibli {
+        width: 70vw;    /*ajuste dos cards*/
+        height: 30vh; 
+    }
+    
+    .front-card img, .back-card{
+        width: 70vw;
+        height: 30vh;
+    }
+    
+    .cardPersonagem{
+        width: 70vw;      /*ajuste dos cards*/
+        height: 30vh;
+    }
+    .front-personagens img, .back-personagens{
+        width: 70vw;
+        height: 30vh;
+    }
+    .listacuriosidades{
+        width: 70vw;      
+        height: 25vh;
+        margin-left: 14%;
+        font-size: 75%;
+    }
+    footer{
+        background-color: rgba(24, 23, 23, 0.379);
     }
 }

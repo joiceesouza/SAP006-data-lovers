@@ -28,6 +28,14 @@ export const ordemPersonagem = (data, order) => {
     return data
 };
 
+export const ordemPersonagem = (data, order) => {
+  if (order === "crescente") {
+    return data.sort((a, z) => a.name > z.name ? 1 : -1)
+  } else if (order === "decrescente") {
+    return data.sort((a, z) => a.name > z.name ? -1 : 1)
+  } return data
+};
+
 //FILTRO//
 
 export const getPeople = films => {
