@@ -748,6 +748,7 @@ export default {
           "hair_color": "Bald",
           "specie": "Human"
         },
+        
         {
           "id": "5fd7416f-d928-4ebc-a4fb-d9bbdf99b06a",
           "name": "Ferrari",
@@ -966,7 +967,7 @@ export default {
         {
           "id": "e40b4241-612b-402f-8e6c-067c44e9c618",
           "name": "Shiho Tsukishima",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/a/ac/Asako_Tsukishima.jpg",
+          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/0/02/Shiho_Tsukishima.jpg",
           "gender": "Female",
           "age": "18",
           "eye_color": "Black",
@@ -1276,16 +1277,6 @@ export default {
           "eye_color": "Black",
           "hair_color": "Bald",
           "specie": "unknown"
-        },
-        {
-          "id": "d9aceca5-beb9-4b2a-85ba-fc17d33750f8",
-          "name": "Zeniba",
-          "img": "https://static.wikia.nocookie.net/studio-ghibli/images/d/d8/Zeniba.png",
-          "gender": "Female",
-          "age": "Elder",
-          "eye_color": "Dark brown",
-          "hair_color": "White",
-          "specie": "Witch"
         },
         {
           "id": "68c4b603-0b31-43dc-b869-a1aa00528b7e",
