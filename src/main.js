@@ -174,6 +174,4 @@ femeleMale.addEventListener("change", function (event) {
   <br>
   <a href ="https://open.spotify.com/playlist/603D3vOd4rWEl3ym4DLWK1?si=13453fabba424c16" target="_blank"> Ouça Studio Ghibli Therapy Session</a>
   </div>`
-  }); 
-
-
+  });

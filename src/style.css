@@ -40,7 +40,6 @@ h1{
     margin-left: 250px;
 }
 
-
 a{
     color: #dba3b0; 
 }
@@ -69,6 +68,7 @@ select:hover{
     0px 0px 30px #9B59B6;
 }
 
+
 input{
     font-size: 16px ;
     text-align: center;
@@ -79,7 +79,6 @@ input{
     outline: none;
     border: none;
     padding: fixed;
-}
 
 .filtermenu{
     display: flex;
@@ -286,9 +285,8 @@ footer{
     0px 0px 10px #9B59B6,
     0px 0px 20px #9B59B6,
     0px 0px 30px #9B59B6;
+
 }
-
-
 
 
 /*======================RESPONSIVIDADE===========================*/
@@ -398,6 +396,16 @@ footer{
 
 /*================CELULARES============*/
 @media screen and (max-width: 480px){
+
+    body {
+        background-image: none;
+        background: #dba3b0/* rgb(242, 204, 211)*/;
+    }
+
+    a{
+        color: black; 
+    }
+
     .navbar-container{
         padding: 5px;
     }

@@ -57,8 +57,4 @@ export const calcAgregado = (personagens) => {
   const mediaPersonagens = personagens.reduce((a, b) => (a + b)) / personagens.length
   const totalPersonagens = personagens.reduce((a, b) => (a + b))
   return {"media": mediaPersonagens, "total": totalPersonagens} 
-} 
-
-
-
-  
+}
