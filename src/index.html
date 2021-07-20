@@ -1,282 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!div id="root"><!/div>
-  <header> 
-    <h1> Studio Ghibi 
-    </h1>  
-  </header><br>
 
-<main>
-  <div class="container" id="2baf70d1-42bb-4437-b551-e5fed5a87abe">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="icon.png" type="icon" />
+</head>
 
-    Title: Castle in the Sky 
-     <img src="img/Castle_in_the_Sky.jpg" alt="Castle"> 
-    <li> Descrição: A órfã Sheeta herdou um cristal misterioso que a liga ao mítico reino do céu de Laputa. Com a ajuda do engenhoso Pazu e de um bando de piratas do céu, ela chega às ruínas da outrora grande civilização. Sheeta e Pazu devem enganar o mal Muska, que planeja usar a ciência de Laputa para se tornar o governante do mundo.</li>
-    <li> Diretor: Hayao Miyazaki</li>  
-    <li> Produtor: Isao Takahata</li>
-    <li> Ano de lançamento: 1986</li>
-    <li> Rt_score: 95</li>
-    <li> <a href="cantle.html">Personagens </a> </li>
+<body>
+  <header>
+    <nav class="navbar-container">
+      <div class="nav-item nav-grow"></div>
+      <img src="icon.png" class="logo" alt="Logo">
+      <h1>Studio Ghibli - 株式会社スタジオジブリ</h1>
 
-  </div> <br>
-      
-  <div class="container" id="58611129-2dbc-4a81-a72f-77ddfc1b1b49">
-        
-    Titlle: My Neighbor Totoro
-     <img src="img/My_Neighbor_Totoro.jpg" alt="My Neighbor">
-    <li> Descrição: Duas irmãs se mudam para o campo com o pai para ficarem mais perto da mãe hospitalizada, e descobrem que as árvores ao redor são habitadas por Totoros, espíritos mágicos da floresta. Quando a mais nova foge de casa, a irmã mais velha busca a ajuda dos espíritos para encontrá-la.</li>
-    <li> Diretor: Hayao Miyazaki</li>
-    <li> Produtor: Hayao Miyazaki</li>
-    <li> Ano de lançamento: 1988</li>
-    <li> Rt_score: 93</li>
-    <li> Personagens:</li>
+      <form class="filtermenu"></form>
 
-  </div> <br>  
+      <input id="search" type="Pesquisa" placeholder="Pesquisar Filmes  🔎" />
 
-  <div class="container" id="ea660b10-85c4-4ae3-8a5f-41cea3648e3e">
+      <section class="Menu"></section>
+      <select class="Filmes" id="filterMenu">
+        <option value="none" selected>Escolha sua busca</option>
+        <option value="Filmes">Filmes</option>
+        <option value="Personagem">Personagem</option>
+      </select>
 
-    Título: Kiki's Delivery Service
-     <img src="img/Kiki's_Delivery_Service_(2).jpg" alt="Kiki's">
-    <li> Descrição: Uma jovem bruxa, em seu ano obrigatório de vida independente, encontra dificuldade em se inserir em uma nova comunidade enquanto se sustenta administrando um serviço de correio aéreo. </li>
-    <li> Diretor: Hayao Miyazaki</li>
-    <li> Produtor: Hayao Miyazaki"</li>
-    <li> Ano de lançamento: 1989"</li>
-    <li> Rt_score: 96 </li>
-    <li> Personagens:</li>
+      <select class="genero" id="genero_id">
+        <option value="todos" selected="Gênero">Buscar por Gênero</option>
+        <option value="Female">♀️ Feminino</option>
+        <option value="Male">♂️ Masculino</option>
+      </select>
 
-  </div> <br>
+      <select class="order" id="order">
+        <option value="ordenar" selected="ordenar">Ordenar por</option>
+        <option value="crescente">A a Z</option>
+        <option value="decrescente">Z a A</option>
+      </select>
 
-  <div class="container" id="">
+      <select class="Filmes" id="select_id">
+        <option value="todos" selected="Filmes" id="Filmes">Buscar por Diretor</option>
+        <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+        <option value="Isao Takahata">Isao Takahata</option>
+        <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+        <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+        <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+        <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+      </select>
+    </nav>
+  </header>
 
-    Título: Grave of the Fireflies
-      <img src="img/Grave_of_the_Fireflies_Japanese_poster.jpg" alt="Grave of the Fireflies">
-     <li> Descrição: Na última parte da Segunda Guerra Mundial, um menino e sua irmã, órfãos quando sua mãe é morta no bombardeio de Tóquio, são deixados para sobreviver por conta própria no que resta da vida civil no Japão. A trama segue este menino e sua irmã enquanto eles fazem o possível para sobreviver no interior do Japão, lutando contra a fome, o preconceito e o orgulho de sua própria batalha pessoal. </li>
-     <li> Diretor: Isao Takahata</li>
-     <li> Produtor: Toru Hara</li>
-     <li> Ano de lançamento: 1988</li>
-     <li> Rt_score: 97</li>
-     <li> Personagens:</li>
+  <section class="listacuriosidades" id="curiosidades_id"></section>
+  <section class="listaImpressa" id="listaImpressa"></section>
+  <section class="listaPersonagem" id="listaPersonagem"></section>
 
-  </div> <br>
+  <footer> Desenvolvido por
+    <a href="https://github.com/EricaSerpa">Érica Serpa</a> e
+    <a href="https://github.com/joiceesouza">Joice Souza</a>
+  </footer>
 
-  <div class="container" id="4e236f34-b981-41c3-8c65-f8c9000b94e7">
+  <div id="root"></div>
+  <script src="main.js" type="module"></script>
+</body>
 
-    Título: Only Yesterday
-     <img src="img/Only_Yesterday.jpg" alt="Only">
-    <li> Descrição: É 1982 e Taeko tem 27 anos, é solteira e viveu toda a sua vida em Tóquio. Ela decide visitar sua família no campo, e enquanto o trem viaja pela noite, as memórias voltam de sua juventude: os primeiros momentos imaturos de romance, o início da puberdade e as frustrações da matemática e dos meninos. Na estação, ela é recebida pelo jovem agricultor Toshio, e os encontros com ele começam a reconectá-la a anseios esquecidos. Em mudanças líricas entre o presente e o passado, Taeko contempla o arco de sua vida e se pergunta se ela tem sido fiel aos sonhos de sua infância. </li>
-    <li> Diretor: Isao Takahata</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 1991</li>
-    <li> Rt_score: 100</li>
-    <li> Personagens:</li>
-
-  </div> <br>
-
-  <div class="container" id="ebbb6b7c-945c-41ee-a792-de0e43191bd8">
-
-    Título: Porco Rosso
-     <img src="img/Porco_Rosso.jpg" alt="Porco Rosso">
-    <li> Descrição: Porco Rosso, conhecido no Japão como Crimson Pig (Kurenai no Buta) é o sexto filme de animação de Hayao Miyazaki e lançado em 1992. Você é apresentado a um ás do lutador italiano da Primeira Guerra Mundial, agora vivendo como um caçador de recompensas freelance em busca do ar piratas no Mar Adriático. Ele recebeu uma maldição que mudou sua cabeça para a de um porco. Antes chamado de Marco Pagot, ele agora é conhecido mundialmente como 'Porco Rosso', que significa 'Red Pig' em italiano.</li>
-    <li> Diretor: Hayao Miyazaki</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 1992</li>
-    <li> Rt_score: 94"</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="1b67aa9a-2e4a-45af-ac98-64d6ad15b16c">
-
-    Título: Pom Poko
-     <img src="img/Pom_Poko.jpg" alt="Pom Poko">
-    <li> Descrição: Á medida que o desenvolvimento da cidade humana invade a floresta e o habitat dos prados da população de guaxinins, os guaxinins se vêem confrontados com a possibilidade real de extinção. Em resposta, os guaxinins se envolvem em uma luta desesperada para interromper a construção e preservar sua casa.</li>
-    <li> Diretor: Isao Takahata</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 1994</li>
-    <li> Rt_score: 78</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="ff24da26-a969-4f0e-ba1e-a122ead6c6e3">
-
-    Título: Whisper of the Heart
-     <img src="img/Whisper_of_the_Heart.jpg" alt="Whisper of the Heart">
-     <li> Descrição: Shizuku leva uma vida simples, dominada por seu amor por histórias e escrita. Um dia ela percebe que todos os livros da biblioteca que ela tem foram previamente checados pela mesma pessoa: 'Seiji Amasawa'. Curioso para saber quem ele é, Shizuku conhece um garoto de sua idade que ela acha irritante, mas descobre, para seu choque, que ele é seu 'Príncipe dos Livros'. Conforme ela se aproxima dele, ela percebe que ele apenas leu todos aqueles livros para se aproximar dela. O garoto Seiji aspira ser um fabricante de violino na Itália, e são seus sonhos que fazem Shizuku perceber que ela não tem um caminho claro para sua vida. Sabendo que sua força está na escrita, ela testa seus talentos escrevendo uma história sobre Baron, uma estatueta de gato pertencente ao avô de Seiji.</li>
-     <li> Diretor:Yoshifumi Kondō</li>
-     <li> Produtor:Toshio Suzuki</li>
-     <li> Ano de lançamento: 1995</li>
-     <li> Rt_score: 91</li>
-     <li> Personagens:</li>
-
-  </div> <br>
-
-  <div class="container" id="0440483e-ca0e-4120-8c50-4c8cd9b965d6">
-
-    Título: Princess Mononoke
-     <img src="img/Princess_Mononoke.jpg" alt="Princess Mononoke">
-    <li> Descrição: Ashitaka, um príncipe da tribo Ainu em desaparecimento, é amaldiçoado por um deus javali demonizado e deve viajar para o oeste para encontrar uma cura. Ao longo do caminho, ele encontra San, uma jovem humana lutando para proteger a floresta, e Lady Eboshi, que está tentando destruí-la. Ashitaka deve encontrar uma maneira de trazer equilíbrio a este conflito.</li>
-    <li> Diretor: Hayao Miyazaki</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 1997</li>
-    <li> Rt_score: 92</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="45204234-adfd-45cb-a505-a8e7a676b114">
-
-    Título: My Neighbors the Yamadas
-     <img src="img/My_Neighbors_the_Yamadas.jpg" alt="Yamadas">
-    <li> Descrição: Os Yamadas são uma típica família japonesa de classe média da cidade urbana de Tóquio e este filme nos mostra uma variedade de episódios de suas vidas. Com contos que vão do humorístico ao doloroso, vemos esta família lidar com os pequenos conflitos, problemas e alegrias da vida à sua maneira.</li>
-    <li> Diretor: Isao Takahata"</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 1999</li>
-    <li> Rt_score: 75</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="dc2e6bd1-8156-4886-adff-b39e6043af0c">
-
-    Título: Spirited Away
-     <img src="img/Spirited_Away.jpg" alt="spiritedAway">
-    <li> Descrição: Spirited Away é um filme de animação japonês vencedor do Oscar sobre uma menina de dez anos que se afasta de seus pais por um caminho que leva a um mundo governado por animais estranhos e incomuns como monstros. Seus pais foram transformados em porcos junto com outros dentro de uma casa de banhos cheia dessas criaturas. Será que ela verá o mundo como era antes?</li>
-    <li> Diretor: Hayao Miyazaki</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 2001</li>
-    <li> Rt_score: 97</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="90b72513-afd4-4570-84de-a56c312fdf81">
-
-    Título: The Cat Returns
-     <img src="img/The_Cat_Returns.jpg" alt="The cat">
-    <li> Descrição: Haru, uma colegial entediada com sua rotina normal, salva a vida de um gato incomum e de repente seu mundo se transforma além de qualquer coisa que ela jamais imaginou. O Rei Gato recompensa sua boa ação com uma enxurrada de presentes, incluindo uma proposta de casamento muito chocante para seu filho! Haru embarca em uma viagem inesperada ao Reino dos Gatos, onde seus olhos se abrem para um mundo totalmente diferente.</li>
-    <li> Diretor: Hiroyuki Morita</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 2002</li>
-    <li> Rt_score: 89</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="cd3d059c-09f4-4ff3-8d63-bc765a5184fa">
-
-    Título: Howl's Moving Castle
-     <img src="img/Howl's_Moving_Castle.jpg" alt="Moving Castle">
-    <li> Descrição: Quando Sophie, uma jovem tímida, é amaldiçoada com um corpo velho por uma bruxa rancorosa, sua única chance de quebrar o feitiço está com um jovem bruxo autoindulgente porém inseguro e seus companheiros em suas pernas, caminhando para casa.</li>
-    <li> Diretor: Hayao Miyazaki</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 2004</li>
-    <li> Rt_score: 87</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="112c1e67-726f-40b1-ac17-6974127bb9b9">
-
-    Título: Tales from Earthsea
-     <img src="img/Övärlden.jpg" alt="">
-    <li> Descrição: Algo bizarro se abateu sobre a terra. O reino está se deteriorando. As pessoas estão começando a agir de forma estranha ... O que é ainda mais estranho é que as pessoas estão começando a ver dragões, que não deveriam entrar no mundo dos humanos. Devido a todos esses eventos bizarros, Ged, um mago errante, está investigando a causa. Durante sua jornada, ele conhece o príncipe Arren, um jovem adolescente perturbado. Embora Arren possa parecer um jovem adolescente tímido, ele tem um lado sombrio severo, que lhe concede força, ódio, crueldade e não tem misericórdia, especialmente quando se trata de proteger Teru. Para a bruxa Kumo, esta é uma oportunidade perfeita. Ela pode usar os 'medos' do menino contra aquele que o ajudaria, Ged.</li>
-    <li> Diretor: Gorō Miyazaki</li> 
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 2006</li>
-    <li> Rt_score: 41</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="758bf02e-3122-46e0-884e-67cf83df1786">
-
-    Título: Ponyo on the Cliff by the Sea
-     <img src="img/Ponyo_on_the_Cliff_by_the_Sea.jpg" alt="Ponyo">
-    <li> Descrição: Filho de um marinheiro, Sosuke de 5 anos vive uma vida tranquila em um penhasco à beira-mar com sua mãe Lisa. Em um dia fatídico, ele encontra um lindo peixinho dourado preso em uma garrafa na praia e, ao resgatá-la, dá-lhe o nome de Ponyo. Mas ela não é um peixinho dourado comum. Filha de um mago mestre e de uma deusa do mar, Ponyo usa a magia de seu pai para se transformar em uma jovem e rapidamente se apaixona por Sosuke, mas o uso de tal feitiçaria poderosa causa um desequilíbrio perigoso no mundo. Conforme a lua se aproxima cada vez mais da terra e o pai de Ponyo envia ondas poderosas do oceano para encontrar sua filha, as duas crianças embarcam em uma aventura de uma vida para salvar o mundo e realizar os sonhos de Ponyo de se tornar humano.</li>
-    <li> Diretor: Hayao Miyazaki</li>
-    <li> Produtor: Toshio Suzuki"</li>
-    <li> Ano de lançamento: 2008</li>
-    <li> Rt_score: 92</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="2de9426b-914a-4a06-a3a0-5e6d9d3886f6">
-
-    Título: The Secret World of Arrietty
-     <img src="img/The_Borrower_Arrietty.jpg" alt="The Secret">
-    <li> Descrição: Arrietty, de 14 anos, e o resto da família Clock vivem em um anonimato pacífico enquanto constroem sua própria casa com itens 'emprestados' dos habitantes humanos da casa. No entanto, a vida dos Relógios muda quando um menino humano descobre Arrietty.</li>
-    <li> Diretor: Hiromasa Yonebayashi</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 2010</li>
-    <li> Rt_score: 95</li>
-    <li> Personagens: </li>
-
-  </div>
-
-  <div class="container" id="45db04e4-304a-4933-9823-33f389e8d74d">
-
-    Título: From Up on Poppy Hill
-     <img src="img/From_Up_on_Poppy_Hill.jpg" alt="Poppy">
-    <li> Descrição: A história se passa em 1963 em Yokohama. Kokuriko Manor fica em uma colina com vista para o porto. Uma garota de 16 anos, Umi, mora naquela casa. Todas as manhãs ela levanta uma bandeira de sinalização voltada para o mar. A bandeira significa “Rezo por viagens seguras”. Um menino de 17 anos, Shun, sempre vê esta bandeira do mar enquanto vai de rebocador para a escola. Gradualmente, o par é atraído um pelo outro, mas eles se deparam com uma provação repentina. Mesmo assim, continuam sem fugir das agruras da realidade.</li>
-    <li> Diretor: Gorō Miyazaki</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 2011</li>
-    <li> Rt_score: 83</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="67405111-37a5-438f-81cc-4666af60c800">
-
-    Título: The Wind Rises
-     <img src="img/The_Wind_Rises.jpg" alt="Wind Rises">
-    <li> Descrição: O amor de uma vida inteira por voar inspira o engenheiro de aviação japonês Jiro Horikoshi, cuja carreira histórica inclui a criação do avião de combate A-6M da Segunda Guerra Mundial.</li>
-    <li> Diretor: Hayao Miyazaki</li>
-    <li> Produtor: Toshio Suzuki</li>
-    <li> Ano de lançamento: 2013</li>
-    <li> Rt_score: 89</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class="container" id="578ae244-7750-4d9f-867b-f3cd3d6fecf4">
-    
-    Título : The Tale of the Princess Kaguya
-     <img src="img/The_Tale_of_the_Princess_Kaguya.jpg" alt="Princess Kaguya">
-    <li> Descrição: Um cortador de bambu chamado Sanuki no Miyatsuko descobre uma garota em miniatura dentro de um broto de bambu brilhante. Acreditando que ela seja uma presença divina, ele e sua esposa decidem criá-la como sua, chamando-a de 'Princesa'.</li>
-    <li> Diretor: Isao Takahata</li>
-    <li> Produtor: Yoshiaki Nishimura</li>
-    <li> Ano de lançamento: 2013</li>
-    <li> Rt_score: 100</li>
-    <li> Personagens: </li>
-
-  </div> <br>
-
-  <div class= "container" id="5fdfb320-2a02-49a7-94ff-5ca418cae602">
-
-    Título:When Marnie Was There"
-     <img src="img/When_Marnie_Was_There.jpg" alt="Marnie">
-    <li> Descrição: O filme segue Anna Sasaki vivendo com seus parentes na cidade litorânea. Anna se depara com uma mansão abandonada próxima, onde ela conhece Marnie, uma garota misteriosa que lhe pede para prometer manter seus segredos de todos. À medida que o verão avança, Anna passa mais tempo com Marnie e, eventualmente, Anna descobre a verdade sobre sua família e um orfanato.</li>
-    <li> Diretor: Hiromasa Yonebayashi</li>
-    <li> Produtor: Yoshiaki Nishimura</li>
-    <li> Ano de lançamento: 2014</li>
-    <li> Rt_score: 92</li>
-    <li> Personagens: </li>
-
-
-  </div>
-</main>
-
-
-
-    <script src="main.js" type="module"></script>
-  </body>
 </html>
