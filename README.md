@@ -1,5 +1,7 @@
 ![imagem](https://ik.imagekit.io/vd8jwzhk56v/logo_iaD1AcszOP.png?updatedAt=1626715588134)
 
+Acesse nosso projeto [clicando aqui](https://joiceesouza.github.io/SAP006-data-lovers/)
+
 O objetivo principal deste projeto é que aprenda a desenhar e construir uma interface web
 onde se possa visualizar e manipular dados, entendendo o que o usuário necessita.
 
