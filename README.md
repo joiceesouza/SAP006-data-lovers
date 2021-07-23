@@ -59,7 +59,7 @@ Pensando na interação e visualização dos dados, pensamos inicialmente em tra
 
 ![pagweb](https://ik.imagekit.io/vd8jwzhk56v/baixafidelidade_SsIkoNSbuB-.png)
 
-As palhetas de cores foi escolhida seguindo as cores da imagens selecionada para o fundo da página.
+As paletas de cores foi escolhida seguindo as cores da imagens selecionada para o fundo da página.
 
 ![pagweb](https://ik.imagekit.io/vd8jwzhk56v/paleta_fk6ien-sZ)
 
